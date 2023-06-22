@@ -173,12 +173,6 @@ export class Game {
   private handleForwardMovement(adventurer: Adventurer): void {
     const nextPosition = adventurer.getForwardPosition();
 
-    console.log(
-      this.isAdventurerPositionInMap({adventurer}),
-      adventurer.getPosition(),
-      this.getMap().getTiles()
-    );
-
     if (this.isAdventurerPositionInMap({adventurer}) === false) {
       console.log(
         `${adventurer.getName()} cannot move forward because the position is not in the map`
