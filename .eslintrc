@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["node_modules", "dist", "coverage"],
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "curly": "error",
+    "keyword-spacing": ["error", { "before": true }],
+    "no-multi-spaces": "error",
+    "no-trailing-spaces": "error",
+    "object-curly-newline": ["error"],
+    "object-curly-spacing": ["error", "never"],
+    "semi": "error",
+    "space-before-blocks": "error"
+  }
+}
